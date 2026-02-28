@@ -5,16 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="contact.html">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          <!--  Linking CSS -->
+    <link rel="stylesheet" href="CSS/Style.css">
     <!-- Font Awsome Link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <!-- Icon Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <!--  Linking CSS -->
-    <link rel="stylesheet" href="CSS/Style.css">
-    <title>Clear Reflection</title>
+  
+    <title>DecoVibe</title>
     <link rel="icon" type="image/png" href="IMAGES/logo.png">
 
 
@@ -28,7 +30,7 @@
 
     <div class="spinner"></div>
 
-    <h2 class="site-name" class="glow-bg"data-text="Clear Reflection">Clear Reflection</h2>
+    <h2 class="site-name" class="glow-bg"data-text="Welcome TO DecoVibe"> Welcome To DecoVibe</h2>
   </div>
 </div>
 
@@ -37,17 +39,18 @@
 <!-- Website Content -->
 <div id="contant">
     <!-- Welcome Bar -->
-    <div class=" welcome-bar text-center py-2">
+    <div class=" welcome-bar text-center py-2" id="welcome-barr">
         Welcome to our Store
     </div>
 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm">
         <div class="container">
 
             <a class="navbar-brand fw-bold" href="#">
                 <img src="IMAGES/logo.png" alt="Mirror Logo" height="200" id="logoa">
             </a>
+           
 
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -57,47 +60,12 @@
                 <ul class="navbar-nav mx-auto ms-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#new-arrivals">Home</a>
+                        <a href="index.html" class="nav-link active">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#mirrors" data-bs-toggle="dropdown">
-                            Mirrors
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#wall-mirrors">Drawing Room Mirrors</a></li>
-                            <li><a class="dropdown-item" href="#bathroom-mirrors">Bathroom Mirrors</a></li>
-                            <li><a class="dropdown-item" href="#decorative-mirrors">Decorative Mirrors</a></li>
-                            <li><a class="dropdown-item" href="#led-mirrors">Dressing Mirrors</a></li>
-                            <li><a class="dropdown-item" href="#full-length-mirrors">Bedroom Mirrors</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            Chairs
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#dining-chair">Dining Chairs</a></li>
-                            <li><a class="dropdown-item" href="#accent-chair">Accent Chairs</a></li>
-                            <li><a class="dropdown-item" href="#lounge-chair">Lounge Chairs</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#mirror-materials" data-bs-toggle="dropdown">
-                            Mirror Materials
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#mirror-materials">Wooden framed </a></li>
-                            <li><a class="dropdown-item" href="#mirror-materials">Acrylic bordered</a></li>
-                            <li><a class="dropdown-item" href="#mirror-materials">Metal bordered</a></li>
-                            <li><a class="dropdown-item" href="#mirror-materials">Decorative mirrors</a></li>
-                            <li><a class="dropdown-item" href="#mirror-materials">LED mirrors</a></li>
-                            <li><a class="dropdown-item" href="#mirror-materials">Bluetooth mirrors</a></li>
-                        </ul>
-                    </li>
+                 
 
                     <li class="nav-item">
-                        <a class="nav-link" href="HTML/custom mirror.html">Custom Mirrors</a>
+                        <a class="nav-link" href="comparison.html">Comparsion</a>
                     </li>
 
                     <li class="nav-item">
@@ -105,16 +73,31 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="HTML/contact.html">Contact</a>
+                       <a class="nav-link" href="Contact.html">Contact Us</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="HTML/contact.html">Location</a>
+                        <a class="nav-link" href="Contact#location.html">Location</a>
                     </li>
                 </ul>
 
                 <div class="d-flex align-items-center nav-icons">
-                    <a href="#" class="nav-icon"><i class="bi bi-search"></i></a>
-                    <a href="#" class="nav-icon"><i class="bi bi-cart"></i></a>
+                  <div class="d-flex align-items-center nav-icons">
+
+  <a href="#" class="nav-icon" id="search-toggle">
+    <i class="bi bi-search"></i>
+  </a>
+
+  <a href="#" class="nav-icon">
+    <i class="bi bi-cart"></i>
+  </a>
+
+</div>
+
+<!-- Search Box -->
+<div class="nav-search-box" id="nav-search-box">
+  <input type="text" placeholder="Search products...">
+</div>
                 </div>
 
             </div>
@@ -136,19 +119,22 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="IMAGES/1 (5).jpg" class="d-block w-100" alt="...">
+                <img src="IMAGES/carousel1.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="IMAGES/1 (6).jpg" class="d-block w-100" alt="...">
+                <img src="IMAGES/carousel2.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="IMAGES/1 (2).jpg" class="d-block w-100" alt="...">
+                <img src="IMAGES/carousel3.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="IMAGES/1 (1).jpg" class="d-block w-100" alt="...">
+                <img src="IMAGES/carousel4.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="IMAGES/1(3).jpg" class="d-block w-100" alt="...">
+                <img src="IMAGES/carousel6.jpg" class="d-block w-100" alt="...">
+            </div>
+               <div class="carousel-item">
+                <img src="IMAGES/carousel5.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -165,7 +151,7 @@
     <!-- Carousel Buttons -->
     <div class="explore-collection text-center py-3 py-md-4">
         <h4 class="fw-semibold fs-5 fs-md-4">
-            Explore Our Mirror Collection
+            Explore Our  Collection
         </h4>
     </div>
 
@@ -175,139 +161,94 @@
 
             <div class="category-scroll">
 
-                <a href="#" class="category-item">
-                    <img src="IMAGES/reflection.jpg" alt="Wall Reflections">
-                    <p>Wall Reflections</p>
+                <a href="#mirrors" class="category-item">
+                    <img src="IMAGES/mirror art.png" alt="mirror art">
+                    <p>Mirror art</p>
                 </a>
 
-                <a href="#" class="category-item">
-                    <img src="IMAGES/Bathroom.jpg" alt="Bathroom Elegance">
-                    <p>Bathroom Elegance</p>
+                <a href="#wallpaper" class="category-item">
+                    <img src="IMAGES/wallpaper.png" alt="wallpaper">
+                    <p>Wallpapers</p>
                 </a>
 
-                <a href="#" class="category-item">
-                    <img src="IMAGES/led.jpg" alt="Smart LED Mirrors">
-                    <p>Smart LED Mirrors</p>
+                <a href="#metal wall art" class="category-item">
+                    <img src="IMAGES/metal wall.png" alt="metal wall art">
+                    <p>Metal Wall Art</p>
                 </a>
 
-                <a href="#" class="category-item">
-                    <img src="IMAGES/decor.jpg" alt="Decor Statements">
-                    <p>Decor Statements</p>
+                <a href="#wall shelves" class="category-item">
+                    <img src="IMAGES/shelves.png" alt="wall Shelves">
+                    <p>Wall Shelves</p>
                 </a>
 
-                <a href="#" class="category-item">
-                    <img src="IMAGES/full length.jpg" alt="Full Length Reflections">
-                    <p>Full Length Reflections</p>
-                </a>
-
-                <a href="#" class="category-item">
-                    <img src="IMAGES/dining.jpg" alt="Dining Comfort">
-                    <p>Dining Comfort</p>
-                </a>
-
-                <a href="#" class="category-item">
-                    <img src="IMAGES/accent.jpg" alt="Accent Seating">
-                    <p>Accent Seating</p>
-                </a>
-
-                <a href="#" class="category-item">
-                    <img src="IMAGES/office.jpg" alt="Work Essentials">
-                    <p>Work Essentials</p>
-                </a>
-
-                <a href="#" class="category-item">
-                    <img src="IMAGES/longue.jpg" alt="Lounge Living">
-                    <p>Lounge Living</p>
-                </a>
-            </div>
 
         </div>
     </section>
 
-    <!-- New Arrivals In home page -->
+    <!-- metal art In home page -->
 
-    <section id="new-arrivals" class="py-5">
+    <section id="metal wall art" class="py-5">
         <div class="container">
 
             <div class="new-arrivals-title">
-                NEW ARRIVALS
+                Metal Wall Art
             </div>
 
             <div class="row g-4">
 
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="product-card text-center">
-                        <img src="IMAGES/btn home 1.jpg" alt="">
-                        <h6>Elite Lounge Chairs</h6>
-                        <p class="price">Rs. 3,500</p>
-                        <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
-                            Add to Cart
-                        </button>
-
-
-
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <img src="IMAGES/btn home 2.jpg" alt="">
-                        <h6>Royal Comfort Chairs</h6>
-                        <p class="price">Rs. 5,990</p>
-                        <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
-                            Add to Cart
-                        </button>
-
-
-
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <img src="IMAGES/btn home 3.jpg" alt="">
-                        <h6>Elite Lounge Chairs</h6>
-                        <p class="price">Rs. 11,050</p>
-                        <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
-                            Add to Cart
-                        </button>
-
-
-
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <img src="IMAGES/btn home 4.jpg" alt="">
-                        <h6>Vanity Mirrors</h6>
-                        <p class="price">Rs. 9,500</p>
-                        <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
-                            Add to Cart
-                        </button>
-
-
-
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <img src="IMAGES/btn home 5.jpg" alt="">
-                        <h6>Wall-Mounted Mirrors</h6>
-                        <p class="price">Rs. 4,200</p>
-                        <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
-                            Add to Cart
-                        </button>
-
-
-
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <img src="IMAGES/btn home 6.jpg" alt="">
-                        <h6>Classic Wood Chairs</h6>
+                        <img src="IMAGES/metal wall art2.png" alt="">
+                        <h6>Luxury Modern Metal Leaf Wall Art for Living Room</h6>
                         <p class="price">Rs. 5,500</p>
+                        <a href="Word Doc/drawingRoom 1.docx" class="product-link">View Details</a>
+      
+
+                        <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
+                            Add to Cart
+                        </button>
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <img src="IMAGES/metal wall art 1.png" alt="">
+                        <h6>Exclusive And Premium Design</h6>
+                        <p class="price">Rs. 5,999</p>
+                        <a href="Word Doc/drawingRoom 1.docx" class="product-link">View Details</a>
+                        <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
+                            Add to Cart
+                        </button>
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <img src="IMAGES/metal art3.png" alt="">
+                        <h6>Made With Imported Material</h6>
+                        <p class="price">Rs. 11,500</p>
+                        <a href="Word Doc/drawingRoom 1.docx" class="product-link">View Details</a>
+                        <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
+                            Add to Cart
+                        </button>
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <img src="IMAGES/metal wall art4.png" alt="">
+                        <h6>Modern And Luxury Design</h6>
+                        <p class="price">Rs. 9,500</p>
+                        <a href="Word Doc/drawingRoom 1.docx" class="product-link">View Details</a>
                         <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                             Add to Cart
                         </button>
@@ -318,9 +259,38 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="product-card text-center">
-                        <img src="IMAGES/btn home 7.jpg" alt="">
-                        <h6>Comfort Seating</h6>
+                        <img src="IMAGES/metal art5.png" alt="">
+                        <h6>Abstract Metal Wall Masterpieces </h6>
+                        <p class="price">Rs. 6,999</p>
+                        <a href="Word Doc/drawingRoom 1.docx" class="product-link">View Details</a>
+                        <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
+                            Add to Cart
+                        </button>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <img src="IMAGES/metal art6.png" alt="">
+                        <h6>Simple And Beautiful Art</h6>
+                        <p class="price">Rs. 5,500</p>
+                        <a href="Word Doc/drawingRoom 1.docx" class="product-link">View Details</a>
+                        <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
+                            Add to Cart
+                        </button>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <img src="IMAGES/metal art7.png" alt="">
+                        <h6>Featuring An Elegant Black & Gold Floral Leaf Design.</h6>
                         <p class="price">Rs. 10,500</p>
+                        <a href="Word Doc/drawingRoom 1.docx" class="product-link">View Details</a>
                         <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                             Add to Cart
                         </button>
@@ -331,9 +301,10 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="product-card text-center">
-                        <img src="IMAGES/btn home 8.jpg" alt="">
-                        <h6>Signature Seating</h6>
+                        <img src="IMAGES/metal art8.png" alt="">
+                        <h6>Brighten your Space with Modern Geometric LED wall Art.</h6>
                         <p class="price">Rs. 12,500</p>
+                        <a href="Word Doc/drawingRoom 1.docx" class="product-link">View Details</a>
                         <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                             Add to Cart
                         </button>
@@ -353,21 +324,21 @@
 
             <!-- Section Heading -->
             <div class="mirror-title text-center mb-5">
-                <h3 class="heading-mirror  fw-semibold">Mirrors Collection</h3>
+                <h3 class="heading-mirror  fw-semibold">Mirrors Art</h3>
                 <p class="para-mirror">
                     Timeless reflections crafted for elegant interiors
                 </p>
             </div>
 
-            <!-- Drawing Room MirrorsS -->
-            <div id="wall-mirrors" class="mb-5">
-                <h3 class="mb-4">Drawing Room Mirrors</h3>
+    
+            <div id="mirror art" class="mb-5">
+                <h3 class="mb-4">Mirror Art</h3>
 
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/wall 1.jpg" class="img-fluid">
-                            <h6>Living Room Accent Mirrors</h6>
+                            <img src="IMAGES/mirror1.png" class="img-fluid">
+                            <h6>Handcrafted Artistic Gold Mirror </h6>
                             <p class="price">Rs. 12,999</p>
                             <a href="Word Doc/drawingRoom 1.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -381,9 +352,9 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/wall 2.jpg" class="img-fluid">
-                            <h6>Drawing Room Wall Mirrors</h6>
-                            <p class="price">Rs. 16,955</p>
+                            <img src="IMAGES/mirror2.png" class="img-fluid">
+                            <h6>Organic Shapes That Reflect Style</h6>
+                            <p class="price">Rs. 9,999</p>
                             <a href="Word Doc/drawingRoom 2.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -396,8 +367,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/wall 3.jpg" class="img-fluid">
-                            <h6>Luxury Living Space Mirrors</h6>
+                            <img src="IMAGES/mirror3.png" class="img-fluid">
+                            <h6>Luxury Oval Mirror Set </h6>
                             <p class="price">Rs. 18,500</p>
                             <a href="Word Doc/drawingRoom 3.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -411,7 +382,7 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/wall 4.jpg" class="img-fluid">
+                            <img src="IMAGES/mirror4.png" class="img-fluid">
                             <h6>Modern Living Room Mirrors</h6>
                             <p class="price">Rs. 6,550</p>
                             <a href="Word Doc/drawingRoom 4.docx" class="product-link">View Details</a>
@@ -427,16 +398,16 @@
                 </div>
             </div>
 
-            <!-- BATHROOM MIRRORS -->
+        
             <div id="bathroom-mirrors" class="mb-5">
-                <h3 class="mb-4">Bathroom Mirrors</h3>
+                <h3 class="mb-4"></h3>
 
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/bath 1.jpg" class="img-fluid">
-                            <h6>Bathroom Vanity Mirrors</h6>
-                            <p class="price">Rs. 4,230</p>
+                            <img src="IMAGES/mirror5.png" class="img-fluid">
+                            <h6>Perfect for timeless, sophisticated home aesthetics.</h6>
+                            <p class="price">Rs. 7,999</p>
                             <a href="Word Doc/bathroom 1.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -449,8 +420,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/bath 2.jpg" class="img-fluid">
-                            <h6>Modern Bathroom Mirrors</h6>
+                            <img src="IMAGES/mirror8.png" class="img-fluid">
+                            <h6>Modern Mirror For Lounge</h6>
                             <p class="price">Rs. 14,500</p>
                             <a href="Word Doc/bathroom 2.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -464,8 +435,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/bath 3.jpg" class="img-fluid">
-                            <h6>Luxury Bath Mirrors</h6>
+                            <img src="IMAGES/mirror6.png" class="img-fluid">
+                            <h6>Modern And Unique Mirror For Living Room</h6>
                             <p class="price">Rs. 5,500</p>
                             <a href="Word Doc/bathroom 3.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -479,9 +450,9 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/bath 4.jpg" class="img-fluid">
-                            <h6>Wall-Mounted Bathroom Mirrors</h6>
-                            <p class="price">Rs. 19,500</p>
+                            <img src="IMAGES/mirror7.png" class="img-fluid">
+                            <h6>Simple And Elegant</h6>
+                            <p class="price">Rs. 8,500</p>
                             <a href="Word Doc/bathroom 4.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -493,16 +464,21 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Dressing Mirrors -->
-            <div id="led-mirrors" class="mb-5">
-                <h3 class="mb-4">Smart Dressing Mirrorss</h3>
+<div class="mirror-title text-center mb-5">
+                <h3 class="heading-mirror  fw-semibold">Wallpapers</h3>
+                <p class="para-mirror">
+                    A World Beyond Imagination
+                </p>
+            </div>
+            <!-- wallpaper -->
+            <div id="wallpaper" class="mb-5">
+                <h3 class="mb-4"></h3>
 
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/led 1.jpg" class="img-fluid">
-                            <h6>Dressing Table Mirrors</h6>
+                            <img src="IMAGES/wallpaper1.png" class="img-fluid">
+                            <h6>Wings of Freedom: Abstract Black Wallpaper</h6>
                             <p class="price">Rs. 4,500</p>
                             <a href="Word Doc/drawingRoom 1.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -516,9 +492,9 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/led 2.jpg" class="img-fluid">
-                            <h6>Elegant Dressing Mirrors</h6>
-                            <p class="price">Rs. 7,590</p>
+                            <img src="IMAGES/wallpaper2.png" class="img-fluid">
+                            <h6>Vintage Leaf Wallpaper </h6>
+                            <p class="price">Rs. 7,500</p>
                             <a href="Word Doc/drawingRoom 2.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -531,8 +507,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/led 3.jpg" class="img-fluid">
-                            <h6>Classic Dressing Room Mirrors</h6>
+                            <img src="IMAGES/wallpaper3.png" class="img-fluid">
+                            <h6>Floral Pattern Abstract Wallpaper</h6>
                             <p class="price">Rs. 8,600</p>
                             <a href="Word Doc/drawingRoom 3.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -546,9 +522,9 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/led 4.jpg" class="img-fluid">
-                            <h6>Dressing Mirrors</h6>
-                            <p class="price">Rs. 9,800</p>
+                            <img src="IMAGES/wallpaper4.png" class="img-fluid">
+                            <h6>Liquid Marble Print Wallpaper</h6>
+                            <p class="price">Rs. 4,999</p>
                             <a href="Word Doc/drawingRoom 4.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -561,15 +537,15 @@
                 </div>
             </div>
 
-            <!-- DECORATIVE MIRRORS -->
+        
             <div id="decorative-mirrors" class="mb-5">
-                <h3 class="mb-4">Decorative Mirrors</h3>
+                <h3 class="mb-4"></h3>
 
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/decor 1.jpg" class="img-fluid">
-                            <h6>Decorative Wall Mirrors</h6>
+                            <img src="IMAGES/wallpaper5.png" class="img-fluid">
+                            <h6>Chinese Style Abstract Feather Wallpaper</h6>
                             <p class="price">Rs. 8,990</p>
                             <a href="Word Doc/decorative 1.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -583,9 +559,9 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/decor 2.jpg" class="img-fluid">
-                            <h6>Artistic Statement Mirrors</h6>
-                            <p class="price">Rs. 15,500</p>
+                            <img src="IMAGES/wallpaper6.png" class="img-fluid">
+                            <h6>White & Blue Oynx Marble Wallpaper</h6>
+                            <p class="price">Rs. 7,600</p>
                             <a href="Word Doc/decorative 2.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -598,8 +574,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/decor 3.jpg" class="img-fluid">
-                            <h6>Luxury Decorative Mirrors</h6>
+                            <img src="IMAGES/wallpaper7.png" class="img-fluid">
+                            <h6>Abstract Metallic Granite Marble Wallpaper</h6>
                             <p class="price">Rs. 6,230</p>
                             <a href="Word Doc/decorative 3.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -613,8 +589,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/decor 4.jpg" class="img-fluid">
-                            <h6>Modern Décor Mirrors</h6>
+                            <img src="IMAGES/wallpaper8.png" class="img-fluid">
+                            <h6>Blue Metallic Granite Wallpaper</h6>
                             <p class="price">Rs. 7,870</p>
                             <a href="Word Doc/decorative 4.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -627,16 +603,23 @@
                     </div>
                 </div>
             </div>
+            <!-- Wall mounted-->
+            <div class="mirror-title text-center mb-5">
+                <h3 class="heading-mirror  fw-semibold">Wall Mounted Animal</h3>
+                <p class="para-mirror">
+                    Where Wildlife Meets Wall Art
+                </p>
+            </div>
 
-            <!-- Bedroom MirrorsS -->
-            <div id="full-length-mirrors">
-                <h3 class="mb-4">Bedroom Mirrorss</h3>
+            
+            <div id="wall mounted">
+                <h3 class="mb-4"></h3>
 
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/full 1.jpg" class="img-fluid">
-                            <h6>Cozy Bedroom Mirrors</h6>
+                            <img src="IMAGES/wall animal1.png" class="img-fluid">
+                            <h6>Elephant Sculpture For Living Room</h6>
                             <p class="price">Rs. 12,300</p>
                             <a href="Word Doc/bedroom 1.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -650,8 +633,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/full 2.jpg" class="img-fluid">
-                            <h6>Accent Bedroom Mirrors</h6>
+                            <img src="IMAGES/wall animal2.png" class="img-fluid">
+                            <h6>Black Panther Roaring Head </h6>
                             <p class="price">Rs. 5,999</p>
                             <a href="Word Doc/bedroom 2.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -665,8 +648,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/full 3.jpg" class="img-fluid">
-                            <h6>Modern Bedroom Mirrors</h6>
+                            <img src="IMAGES/wall mount3.png" class="img-fluid">
+                            <h6>Handcrafted Buffalo Sculpture</h6>
                             <p class="price">Rs. 7,499</p>
                             <a href="Word Doc/bedroom 3.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -680,8 +663,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mirror-card text-center">
-                            <img src="IMAGES/full 4.jpg" class="img-fluid">
-                            <h6>Elegant Bedroom Mirrors</h6>
+                            <img src="IMAGES/wall mount4.png" class="img-fluid">
+                            <h6>Deer Head Sculpture</h6>
                             <p class="price">Rs. 8,999</p>
                             <a href="Word Doc/bedroom 4.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -698,27 +681,27 @@
         </div>
     </section>
 
-    <!-- Chair Section -->
-    <section id="chairs" class="py-5">
+    <!-- wall shelves -->
+    <section id="wall shelves" class="py-5">
         <div class="container">
 
             <!-- Section Heading -->
             <div class="chair-title text-center mb-5">
-                <h3 class="heading-chair  fw-semibold">chairs Collection</h3>
+                <h3 class="heading-chair  fw-semibold">Wall Shelves</h3>
                 <p class=" para-chair text-muted small">
-                    Where sophistication meets superior comfort
+                    Discover over Exclusive Wall Shelves Collection
                 </p>
             </div>
 
-            <!-- Dining Chairs -->
+            
             <div id="dining-chair" class="mb-5">
-                <h3 class="mb-4">Dining Chairs </h3>
+                <h3 class="mb-4"></h3>
 
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/dining 1.jpg" class="img-fluid">
-                            <h6>Classic Dining Chairs</h6>
+                            <img src="IMAGES/wall shelf1.png" class="img-fluid">
+                            <h6>3 Separate Shelves Look Elegant</h6>
                             <p class="price">Rs. 5,499</p>
                             <a href="Word Doc/dinning 1.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -732,8 +715,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/dining 2.jpg" class="img-fluid">
-                            <h6>Modern Dining Chairs</h6>
+                            <img src="IMAGES/wall shelf2.png" class="img-fluid">
+                            <h6>Original Wood Corner Shelf</h6>
                             <p class="price">Rs. 6,799</p>
                             <a href="Word Doc/dinning 2.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -747,9 +730,9 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/dining 3.jpg" class="img-fluid">
-                            <h6>Luxury Dining Seating</h6>
-                            <p class="price">Rs. 6,780</p>
+                            <img src="IMAGES/wall shelf3.png" class="img-fluid">
+                            <h6>Small Beautiful Shelf For Bedroom </h6>
+                            <p class="price">Rs. 3,500</p>
                             <a href="Word Doc/dinning 3.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -762,8 +745,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/dining 4.jpg" class="img-fluid">
-                            <h6>Elegant Dining Chairs</h6>
+                            <img src="IMAGES/wall shelf4.png" class="img-fluid">
+                            <h6>Montage Wall Shelf</h6>
                             <p class="price">Rs. 5,650</p>
                             <a href="Word Doc/dinning 4.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -778,15 +761,15 @@
                 </div>
             </div>
 
-            <!--  Accent Chairs -->
+            
             <div id="accent-chair" class="mb-5">
-                <h3 class="mb-4">Accent Chairs</h3>
+                <h3 class="mb-4"></h3>
 
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/accent 1.jpg" class="img-fluid">
-                            <h6>Designer Accent Chairs</h6>
+                            <img src="IMAGES/wall shelf5.png" class="img-fluid">
+                            <h6>Wall Hanging Shelf</h6>
                             <p class="price">Rs. 4,790</p>
                             <a href="Word Doc/accent 1.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -800,9 +783,9 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/accent 2.jpg" class="img-fluid">
-                            <h6>Luxury Accent Seating</h6>
-                            <p class="price">Rs. 9,300</p>
+                            <img src="IMAGES/wall shelf6.png" class="img-fluid">
+                            <h6>Canon Wall Shelf</h6>
+                            <p class="price">Rs. 5,999</p>
                             <a href="Word Doc/accent 2.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -815,8 +798,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/accent 3.jpg" class="img-fluid">
-                            <h6>Statement Accent Chairs</h6>
+                            <img src="IMAGES/wall shelf7.png" class="img-fluid">
+                            <h6>Ivory Decorative Shelf</h6>
                             <p class="price">Rs. 8,500</p>
                             <a href="Word Doc/accent 3.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -830,8 +813,8 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/accent 4.jpg" class="img-fluid">
-                            <h6>Luxury Accent Seating</h6>
+                            <img src="IMAGES/wall shelf8.png" class="img-fluid">
+                            <h6>Set Of 3 Rectangular Shelf</h6>
                             <p class="price">Rs. 7,299</p>
                             <a href="Word Doc/accent 4.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -844,16 +827,22 @@
                     </div>
                 </div>
             </div>
+                   <!-- photo frame art-->
+            <div class="chair-title text-center mb-5">
+                <h3 class="heading-chair  fw-semibold">Photo frame Art</h3>
+                <p class=" para-chair text-muted small">
+                    Frame Your World With Style
+                </p>
+            </div>
 
-            <!-- Lounge Chairs -->
             <div id="lounge-chair" class="mb-5">
-                <h3 class="mb-4">Lounge Chairs</h3>
+                <h3 class="mb-4"></h3>
 
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/lounge 1.jpg" class="img-fluid">
-                            <h6>Luxury Lounge Chairs</h6>
+                            <img src="IMAGES/photo art1.png" class="img-fluid">
+                            <h6>Tree Art Photo Frame</h6>
                             <p class="price">Rs. 4,599</p>
                             <a href="Word Doc/lounge 1.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
@@ -867,9 +856,9 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/lounge 2.jpg" class="img-fluid">
-                            <h6>Comfort Lounge Chairs</h6>
-                            <p class="price">Rs. 12,800</p>
+                            <img src="IMAGES/photo art2.png" class="img-fluid">
+                            <h6>Leaves Frame Art</h6>
+                            <p class="price">Rs. 4,500</p>
                             <a href="Word Doc/lounge 2.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -882,9 +871,9 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/lounge 3.jpg" class="img-fluid">
-                            <h6>Relaxation Lounge Chairs</h6>
-                            <p class="price">Rs. 14,299</p>
+                            <img src="IMAGES/photo art3.png" class="img-fluid">
+                            <h6>Floral Framed Art</h6>
+                            <p class="price">Rs. 3,500</p>
                             <a href="Word Doc/lounge 3.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -897,9 +886,69 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="chair-card text-center">
-                            <img src="IMAGES/lounge 4.jpg" class="img-fluid">
-                            <h6>Premium Lounge Chairs</h6>
+                            <img src="IMAGES/photo art8.png" class="img-fluid">
+                            <h6>Abstract Photo Frame Art</h6>
                             <p class="price">Rs. 17,999</p>
+                            <a href="Word Doc/lounge 4.docx" class="product-link">View Details</a>
+                            <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
+                                Add to Cart
+                            </button>
+
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="chair-card text-center">
+                            <img src="IMAGES/photo art4.png" class="img-fluid">
+                            <h6>Artistic Photo Frame</h6>
+                            <p class="price">Rs. 6,500</p>
+                            <a href="Word Doc/lounge 2.docx" class="product-link">View Details</a>
+                            <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
+                                Add to Cart
+                            </button>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="chair-card text-center">
+                            <img src="IMAGES/photo art5.png" class="img-fluid">
+                            <h6>Family Tree Photo Frame Art</h6>
+                            <p class="price">Rs. 7,500</p>
+                            <a href="Word Doc/lounge 3.docx" class="product-link">View Details</a>
+                            <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
+                                Add to Cart
+                            </button>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="chair-card text-center">
+                            <img src="IMAGES/photo art6.png" class="img-fluid">
+                            <h6>Metal Frame Art</h6>
+                            <p class="price">Rs. 3,999</p>
+                            <a href="Word Doc/lounge 4.docx" class="product-link">View Details</a>
+                            <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
+                                Add to Cart
+                            </button>
+
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="chair-card text-center">
+                            <img src="IMAGES/photo art7.png" class="img-fluid">
+                            <h6>Rectangular Frame Art For Office</h6>
+                            <p class="price">Rs. 5,000</p>
                             <a href="Word Doc/lounge 4.docx" class="product-link">View Details</a>
                             <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#confirmCartModal">
                                 Add to Cart
@@ -914,108 +963,7 @@
         </div>
     </section>
 
-    <!-- Mirror Material Section -->
-
-    <section id="mirror-materials" class="py-5">
-        <div class="container">
-
-            <div class="text-center mb-5">
-                <h3 class="heading-material fw-semibold">Mirror Materials & Craftsmanship</h3>
-                <p class="para-material text-muted small">
-                    Crafted with precision using premium materials
-                </p>
-            </div>
-
-            <div class="row g-4">
-
-                <!-- Material 1 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="material-card text-center h-100">
-                        <img src="IMAGES/wood.jpg" class="img-fluid mb-3" alt="High Clarity Glass">
-                        <h6>Wooden Framed Mirrors</h6>
-                        <p>
-                            Wooden framed mirrors bring warmth and timeless elegance to any interior. Crafted from
-                            premium hardwoods and finished with refined detailing, these mirrors add a natural yet
-                            luxurious character to living rooms, bedrooms, and hallways.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Material 2 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="material-card text-center h-100">
-                        <img src="IMAGES/acrylic.jpg" class="img-fluid mb-3" alt="Premium Frames">
-                        <h6>Acrylic Bordered Mirrors</h6>
-                        <p>
-                            Acrylic bordered mirrors offer a sleek, contemporary look with lightweight durability. Their
-                            clean edges and modern appeal make them ideal for minimalist spaces, providing clarity,
-                            strength, and a refined finish without visual heaviness.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Material 3 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="material-card text-center h-100">
-                        <img src="IMAGES/goldframe.jpg" class="img-fluid mb-3" alt="Safety Backing">
-                        <h6>Metal Bordered Mirrors</h6>
-                        <p>
-                            Metal bordered mirrors showcase bold sophistication with a modern edge. Finished in brushed
-                            gold, matte black, or chrome, these mirrors add architectural strength and a polished
-                            statement to both classic and contemporary interiors.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Material 4 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="material-card text-center h-100">
-                        <img src="IMAGES/decorative.jpg" class="img-fluid mb-3" alt="Protective Coating">
-                        <h6>Decorative Mirrors</h6>
-                        <p>
-                            Decorative mirrors are designed as artistic focal points that elevate interior styling.
-                            Featuring unique shapes, ornate frames, and statement finishes, they enhance spaces while
-                            reflecting refined taste and creativity.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Material 5 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="material-card text-center h-100">
-                        <img src="IMAGES/led bath.jpg" class="img-fluid mb-3" alt="Protective Coating">
-                        <h6>LED Mirrors</h6>
-                        <p>
-                            LED mirrors combine modern technology with elegant design, offering soft illumination and
-                            energy efficiency. Ideal for dressing areas and bathrooms, these mirrors provide balanced
-                            lighting that enhances functionality and visual appeal.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Material 6 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="material-card text-center h-100">
-                        <img src="IMAGES/bluetooth.jpg" class="img-fluid mb-3" alt="Protective Coating">
-                        <h6>Bluetooth Mirrors</h6>
-                        <p>
-                            Bluetooth mirrors redefine convenience by integrating smart technology into everyday living.
-                            With built-in speakers and seamless connectivity, these mirrors deliver entertainment while
-                            maintaining a sleek, modern aesthetic.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
+   
 
 
     <!-- ABOUT US SECTION -->
@@ -1024,8 +972,8 @@
 
             <!-- Section Heading -->
             <div class="about-title text-center mb-5">
-                <h2 class="about-heading">About Clear Reflection</h2>
-                <p class="about-para">Where craftsmanship meets timeless design</p>
+                <h2 class="about-heading">About DecoVibe</h2>
+                <p class="about-para">Insipired LIving, Beautiful Homes</p>
             </div>
 
             <div class="row align-items-center g-5">
@@ -1044,7 +992,7 @@
                             <div id="aboutOne" class="accordion-collapse collapse show"
                                 data-bs-parent="#aboutAccordion">
                                 <div class="accordion-body">
-                                    Clear Reflection was founded with a vision to bring elegance, precision, and refined
+                                    DecoVibe was founded with a vision to bring elegance, precision, and refined
                                     craftsmanship into modern interiors. Our journey is rooted in creating designs that
                                     feel
                                     timeless yet contemporary.
@@ -1062,7 +1010,7 @@
                             </h2>
                             <div id="aboutTwo" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
                                 <div class="accordion-body">
-                                    We design and craft premium mirrors and chairs that balance functionality with
+                                    We design and craft premium mirrors art , metal wall art , wallpaper , wall mounted animal , wall shelves and photo frame art that balance functionality with
                                     refined
                                     aesthetics. Each piece is thoughtfully created to enhance living, dining, and
                                     workspace
@@ -1119,7 +1067,7 @@
                                 <div class="accordion-body">
                                     We are committed to excellence at every stage—from design and craftsmanship to
                                     customer
-                                    experience. Each mirror and chair reflects our dedication to quality and trust.
+                                    experience. Each Product reflects our dedication to quality and trust.
                                 </div>
                             </div>
                         </div>
@@ -1129,7 +1077,7 @@
 
                 <!-- IMAGE -->
                 <div class="col-lg-6 text-center">
-                    <img src="IMAGES/about accordion.jpg" class="img-fluid about-img" alt="Luxury Mirror Interior">
+                    <img src="IMAGES/accordian.png" class="img-fluid about-img" alt="Luxury Mirror Interior">
                 </div>
 
             </div>
@@ -1144,7 +1092,10 @@
                 <!-- CONTACT -->
                 <div class="col-12 col-lg-3 mb-4">
                     <h6 class="footer-title">Contact Us</h6>
-                    <p><i class="bi bi-envelope"></i> ClearReflection124@gmail.com</p>
+                    <p><i class="bi bi-envelope"></i> 
+                    <a href="mailto:DecoVibe124@gmail.com" class="footer-email">
+    DecoVibe124@gmail.com
+  </a></p>
                     <p><i class="bi bi-telephone"></i> 124-966-4377</p>
                     <p><i class="bi bi-geo-alt"></i> Gulshan-e-Iqbal, Karachi</p>
                 </div>
@@ -1154,16 +1105,16 @@
                     <h6 class="footer-title">Quick Links</h6>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="#new-arrivals">New Arrivals</a></li>
+                        <li><a href="#metal art">metal art</a></li>
                         <li><a href="#mirrors">Mirrors</a></li>
                         <li><a href="HTML/contact.html">Contact</a></li>
+                        <li><a href="../HTML/comparison.html">Comparison</a></li>
                     </ul>
                 </div>
 
                 <!-- LOGO -->
                 <div class="col-12 col-lg-3 mb-4 text-center">
-                    <img src="IMAGES/logo.png" alt="Clear Reflection" class="footer-logo">
+                    <img src="IMAGES/logo.png" alt="DecoVibe" class="footer-logo">
                 </div>
 
                 <!-- HOURS + SOCIAL -->
@@ -1187,7 +1138,7 @@
             </div>
 
             <div class="footer-bottom text-center">
-                © 2026 Clear Reflection | Designed for Aptech Project
+                © 2026 DecoVibe | Designed for Aptech Project
             </div>
         </div>
     </footer>
@@ -1251,7 +1202,59 @@
     }, 2000);
     });
 </script>
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalPrice"></p>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+<script>
+const modal = document.getElementById("productModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalPrice = document.getElementById("modalPrice");
+const modalDesc = document.getElementById("modalDesc");
+const closeBtn = document.querySelector(".close");
 
+document.querySelectorAll(".view-details").forEach(button => {
+    button.addEventListener("click", function() {
+
+        const card = this.closest(".card");
+
+        const title = card.querySelector("h3").innerText;
+        const price = card.querySelector(".price").innerText;
+        const desc = card.querySelector(".description").innerText;
+
+        modalTitle.innerText = title;
+        modalPrice.innerText = price;
+        modalDesc.innerText = desc;
+
+        modal.style.display = "flex";
+    });
+});
+
+closeBtn.onclick = () => modal.style.display = "none";
+
+window.onclick = function(e) {
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
+};
+</script>
+<script>
+  const toggleBtn = document.getElementById("search-toggle");
+  const searchBox = document.getElementById("nav-search-box");
+
+  toggleBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    searchBox.style.display =
+      searchBox.style.display === "block" ? "none" : "block";
+
+    toggleBtn.classList.toggle("active");
+  });
+</script>
 </body>
 
 </html>

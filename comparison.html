@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Compare Products</title>
+<style>
+
+body{
+    background:#000;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+h1{
+    color:gold;
+    margin-top:30px;
+}
+
+select, button{
+    padding:10px;
+    margin:10px;
+    border-radius:6px;
+    border:none;
+}
+
+button{
+    background:gold;
+    cursor:pointer;
+}
+
+.compare-box{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+}
+
+.card{
+    background:#111;
+    padding:20px;
+    width:300px;
+    border-radius:12px;
+    border:1px solid gold;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Compare Products</h1>
+
+<select id="category">
+    <option value="">Select Category</option>
+    <option value="metal">Metal Wall Art</option>
+    <option value="mirror">Mirror Art</option>
+    <option value="wallpaper">Wallpaper</option>
+    <option value="animal">Wall Mounted Animal</option>
+    <option value="shelf">Wall Shelves</option>
+    <option value="frame">Photo Frame Art</option>
+</select>
+
+<br>
+
+<select id="product1">
+    <option value="">Select First Product</option>
+</select>
+
+<select id="product2">
+    <option value="">Select Second Product</option>
+</select>
+
+<br>
+
+<button onclick="compareProducts()">Compare</button>
+
+<div class="compare-box" id="result"></div>
+
+<script>
+
+const products = {
+
+metal:[
+{name:"Luxury Metal Leaf", price:"Rs. 5,500", img:"https://via.placeholder.com/300"},
+{name:"Premium Metal Design", price:"Rs. 6,000", img:"https://via.placeholder.com/300"},
+{name:"Black & Gold Floral Art", price:"Rs. 10,500", img:"https://via.placeholder.com/300"},
+{name:"Geometric LED Metal Art", price:"Rs. 12,500", img:"https://via.placeholder.com/300"}
+],
+
+mirror:[
+{name:"Handcrafted Gold Mirror", price:"Rs. 12,999", img:"https://via.placeholder.com/300"},
+{name:"Luxury Oval Mirror Set", price:"Rs. 18,500", img:"https://via.placeholder.com/300"},
+{name:"Modern Wall Mirror", price:"Rs. 6,550", img:"https://via.placeholder.com/300"},
+{name:"Elegant Round Mirror", price:"Rs. 8,500", img:"https://via.placeholder.com/300"}
+],
+
+wallpaper:[
+{name:"Vintage Leaf Wallpaper", price:"Rs. 7,500", img:"https://via.placeholder.com/300"},
+{name:"Floral Abstract Wallpaper", price:"Rs. 8,600", img:"https://via.placeholder.com/300"},
+{name:"Onyx Marble Wallpaper", price:"Rs. 7,600", img:"https://via.placeholder.com/300"},
+{name:"Blue Granite Wallpaper", price:"Rs. 7,870", img:"https://via.placeholder.com/300"}
+],
+
+animal:[
+{name:"Elephant Wall Sculpture", price:"Rs. 12,300", img:"https://via.placeholder.com/300"},
+{name:"Black Panther Head", price:"Rs. 5,999", img:"https://via.placeholder.com/300"},
+{name:"Buffalo Head Art", price:"Rs. 7,499", img:"https://via.placeholder.com/300"},
+{name:"Deer Head Wall Mount", price:"Rs. 8,999", img:"https://via.placeholder.com/300"}
+],
+
+shelf:[
+{name:"Wood Corner Shelf", price:"Rs. 6,799", img:"https://via.placeholder.com/300"},
+{name:"Bedroom Wall Shelf", price:"Rs. 3,500", img:"https://via.placeholder.com/300"},
+{name:"Decorative Ivory Shelf", price:"Rs. 8,500", img:"https://via.placeholder.com/300"},
+{name:"Set of 3 Wall Shelves", price:"Rs. 7,299", img:"https://via.placeholder.com/300"}
+],
+
+frame:[
+{name:"Tree Photo Frame Art", price:"Rs. 4,599", img:"https://via.placeholder.com/300"},
+{name:"Family Tree Frame", price:"Rs. 7,500", img:"https://via.placeholder.com/300"},
+{name:"Metal Frame Art", price:"Rs. 3,999", img:"https://via.placeholder.com/300"},
+{name:"Office Wall Frame", price:"Rs. 5,000", img:"https://via.placeholder.com/300"}
+]
+
+};
+
+// CATEGORY CHANGE EVENT
+document.getElementById("category").addEventListener("change", function(){
+
+let category = this.value;
+let p1 = document.getElementById("product1");
+let p2 = document.getElementById("product2");
+
+p1.innerHTML = '<option value="">Select First Product</option>';
+p2.innerHTML = '<option value="">Select Second Product</option>';
+
+if(category === "") return;
+
+products[category].forEach((item,index)=>{
+    p1.innerHTML += `<option value="${index}">${item.name}</option>`;
+    p2.innerHTML += `<option value="${index}">${item.name}</option>`;
+});
+
+});
+
+// COMPARE FUNCTION
+function compareProducts(){
+
+let category = document.getElementById("category").value;
+let p1 = document.getElementById("product1").value;
+let p2 = document.getElementById("product2").value;
+
+if(category==="" || p1==="" || p2===""){
+    alert("Select category and both products");
+    return;
+}
+
+if(p1===p2){
+    alert("Select two different products");
+    return;
+}
+
+let productA = products[category][p1];
+let productB = products[category][p2];
+
+document.getElementById("result").innerHTML = `
+<div class="card">
+<img src="${productA.img}">
+<h3>${productA.name}</h3>
+<p style="color:gold;">${productA.price}</p>
+</div>
+
+<div class="card">
+<img src="${productB.img}">
+<h3>${productB.name}</h3>
+<p style="color:gold;">${productB.price}</p>
+</div>
+`;
+
+}
+
+</script>
+
+</body>
+</html>

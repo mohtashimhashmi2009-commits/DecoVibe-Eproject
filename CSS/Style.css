@@ -1,33 +1,60 @@
+/* ===== THEME COLORS ===== */
+:root {
+    --primary-brown: #7a533c;
+    --light-beige: #c7b2a3;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+
+
+
+
 /* Welcome Bar */
-.welcome-bar {
-    background-color: #6F4E37;
-    color: white;
+ .welcome-bar {
+ 
     font-weight: bold;
     font-size: 18px;
     font-style: oblique;
+} 
+#welcome-barr{
+ background-color: #ffe87c;
+  color: #000000;
 }
+
 #logoa{
-    border: 3px solid #ffe87c;
-    box-shadow: 0 0 15px  #facd44  , 0 0 50px rgba(255, 221, 0, 0.671);
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 15px rgba(255, 215, 0,0.6);
     border-radius: 50%;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 /* Header */
+.navbar{
+    background-color:#c59375 ;
+     
+    
+}
+
 .navbar .nav-link {
-    color: #2B2B2B;
+  color: #C7B2A3;
     font-weight: 500;
     position: relative;
 }
+.navbar-toggler{
+    border: 1px solid #7A533C;
+}
 .navbar-toggler-icon{
-    background-color: #ffe87c ;
-    border-radius: 10%;
+    background-color: #7A533C ;
+    border-radius: 5px;
 }
 
-
+ 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-    color: #C6A75E;
+  /* background-color: #7A533C; */
+  color: #fff;
+  border-radius: 6px;
 }
 
 /* Gold underline on hover */
@@ -36,7 +63,7 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #C6A75E;
+    background-color: #dbca33f5;
     left: 0;
     bottom: -5px;
     transition: width 0.3s ease;
@@ -49,23 +76,23 @@
 /* Dropdown Menu */
 .dropdown-menu {
     border: none;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 25px rgba(122, 83, 60 0.08);
 }
 
 .dropdown-item:hover {
     background-color: #F8F9FA;
-    color: #C6A75E;
+    color: #C7B2A3;
 }
 
 /* Icons */
 .nav-icons .nav-icon {
-    color: #2B2B2B;
+    color: #C7B2A3;
     font-size: 18px;
     margin-left: 18px;
 }
 
 .nav-icons .nav-icon:hover {
-    color: #C6A75E;
+    color: #C7B2A3;
 }
 
 /* Carousel */
@@ -160,19 +187,19 @@
     height: 12px;
     border-radius: 50%;
     background-color: transparent;
-    border: 2px solid #C6A75E;
+    border: 2px solid #C7B2A3;
     margin: 0 6px;
     opacity: 1;
 }
 
 /* Active indicator */
 .carousel-indicators .active {
-    background-color: #C6A75E;
+    background-color: #C7B2A3;
 }
 
 /* Carousel Buttons */
 .explore-collection h4 {
-    color: #2B2B2B;
+    color: #C7B2A3;
 }
 
 /* Categories Carousel */
@@ -200,7 +227,7 @@
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px dashed #C6A75E;
+    border: 2px dashed #C7B2A3;
     padding: 6px;
     transition: all 0.3s ease;
 }
@@ -229,7 +256,7 @@
 }
 
 .product-link:hover {
-    color: #c9a24d;
+    color: #C7B2A3;
 }
 
 /* Cards Allignment correction */
@@ -304,7 +331,7 @@
 .product-card h6 {
     font-size: 15px;
     margin-top: 15px;
-    color: #2B2B2B;
+    color: #C7B2A3;
 }
 
 .price {
@@ -316,7 +343,7 @@
     color: white;
 }
 .btn-cart {
-    background: #6F4E37;
+    background: #C7B2A3;
     color: #ffffff;
     border-radius: 8px;
     padding: 10px 0;
@@ -346,7 +373,7 @@
 
 .about-para {
     font-size: 20px;
-    color: #2B2B2B;
+    color: #C7B2A3;
     letter-spacing: 2px;
 }
 
@@ -378,7 +405,7 @@
 }
 
 .luxury-accordion .accordion-button:not(.collapsed) {
-    color: #c6a96c;
+    color: #C7B2A3;
     background-color: #fff;
     box-shadow: none;
 }
@@ -760,9 +787,9 @@ body {
 .chair-card,
 .material-card {
     background-color: var(--black-card);
-    border-radius: 14px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.75);
-    transition: 0.3s ease;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+    transition: all 0.3s ease;
 }
 
 .product-card:hover,
@@ -927,8 +954,8 @@ section {
 /* Logo */
 .loader-logo {
   width: 170px;
-  border: 3px solid #ffdc73 ;
-  box-shadow: 0 0 15px  #facd44  , 0 0 50px rgba(255, 221, 0, 0.5);
+  border: 3px solid #ffffff ;
+  box-shadow: 0 0 15px  #ffffff  , 0 0 50px rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   margin-bottom: 2px;
 }
@@ -937,9 +964,9 @@ section {
 .spinner{
   width: 50px;
   height: 50px;
-  border: 5px solid rgba(255,255,255,0.2);
-  border-top: 5px solid #ffc822;
-  box-shadow: 0 0 15px  #ffcf3ec3  , 0 0 50px rgba(255, 221, 0, 0.5);
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-top: 5px solid #ffffff;
+  box-shadow: 0 0 15px  #ffffff , 0 0 50px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 17px auto;
@@ -955,16 +982,16 @@ section {
 .site-name {
   font-weight: 530;
   font-style: italic ;
-  color: #ffdc73;
+  color: #ffffff;
   font-family: 'Orbitron', sans-serif;
   font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 4px;
 
   text-shadow:
-    0 0 6px rgba(255, 235, 87, 0.806),
-    0 0 14px rgba(255, 234, 46, 0.6),
-    0 0 30px rgba(255, 224, 46, 0.4);
+    0 0 6px rgba(255, 255, 255, 0.806),
+    0 0 14px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4);
   position: relative;
 }
 
@@ -1030,4 +1057,177 @@ section {
 /* bootstrap modal always on top */
 .modal {
   z-index: 1055 !important;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  color: white;
+  padding: 25px;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 12px;
+  border: 2px solid gold;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h2 {
+  color: gold;
+}
+
+.modal-content p {
+  margin: 10px 0;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  color: gold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+/* Modal Heading White */
+.cart-modal h5 {
+    color: #ffffff !important;
+}
+
+/* Modal Paragraph White */
+.cart-modal p {
+    color: #ffffff !important;
+}
+
+/* Optional: icon bhi white karna ho */
+.cart-modal i {
+    color: #ffffff;
+}
+/* Confirm Modal - Cancel Button White */
+#confirmCartModal .btn-outline-gold {
+    color: #ffffff !important;
+    border-color: #f5d76e !important;  
+    background-color: transparent !important;
+}
+
+/* Hover pe bhi white hi rahe */
+#confirmCartModal .btn-outline-gold:hover {
+    color: #ffffff !important;
+    background-color: rgba(245, 215, 110, 0.1);
+}
+.footer-email {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-email:hover {
+  color: #ffe87c;
+}
+.navbar {
+  padding: 10px 0;   
+}
+.navbar img {
+  height: 80px;   
+  
+  opacity: 0.8;  
+}
+
+.navbar {
+  min-height: auto;
+  position: relative;
+}
+
+.category-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: nowrap;   
+}
+
+.category-item {
+  text-decoration: none;
+  color: white;
+}
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: #000;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;  
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border: 1px solid #ffe87c;
+  outline: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+.nav-icons {
+  position: relative;
+}
+
+.nav-icon {
+  color: white;
+  font-size: 20px;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-icon.active {
+  color: #ffe87c;   /* Yellow when active */
+}
+
+.nav-search-box {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  border: 1px solid #ffe87c;
+}
+
+.nav-search-box input {
+  padding: 6px 12px;
+  background: black;
+  border: none;
+  outline: none;
+  color: white;
+}
+.nav-search-box {
+  position: absolute;
+  right: 20px;
+  top: 100%;     
+  margin-top: 10px;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ffe87c;
+  display: none;
+  z-index: 999;  
 }
